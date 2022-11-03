@@ -6,7 +6,7 @@
   --main-bg: #fff; /*цвет основного бєкгроунда */
   --light-gray: #f5f4fa; /*цвет кнопок и рамок*/
   --logo: #000000;
-  --icons: #AFB1B8; /*цвет иконок*/
+  --icons: #afb1b8; /*цвет иконок*/
 }
 
 body {
@@ -27,10 +27,9 @@ body {
 
 img {
   display: block;
-  max-width:100%; 
-  height:auto;
+  max-width: 100%;
+  height: auto;
 }
-
 
 .logo {
   font-family: "Raleway"; /* задаём шрифт и размер ЛОГО */
@@ -44,8 +43,8 @@ img {
 /* 28. Для лого в футері потрібно задати нижній марджин */
 
 .logo.footer {
-display: block;
-margin-bottom: 20px;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .logo-accent {
@@ -81,7 +80,7 @@ margin-bottom: 20px;
 .contacts {
   color: var(--description-color);
   /* выравнивание иконок по вертикали */
-  display: flex; 
+  display: flex;
   align-items: center;
 }
 
@@ -138,22 +137,20 @@ margin-bottom: 20px;
 }
 
 .hero-base {
-  background-image: linear-gradient(
-    rgb(47, 48, 58, 0.4),
-    rgb(47, 48, 58, 0.4)
-    ), url("../images/bg-header.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: linear-gradient(rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+    url("../images/bg-header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hero-fon {
-  background-color:rgba(0,0,0,.3);
-  height:100%;
-  position:fixed;
-  width:100%;
-  top:0;
-  left:0;
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
 /* 12. Для .btn-hero приберіть ширину, висоту, марджин. 
@@ -178,7 +175,10 @@ margin-bottom: 20px;
   /* курсор мыши при наведении*/
   cursor: pointer;
   margin: 0 auto;
-  display: block;
+  /* display: block; */
+  display: flex;
+  align-items: center;
+  gap: 10px;
   /* margin: 30px auto 0; */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -198,7 +198,7 @@ margin-bottom: 20px;
   background: #88c4f5;
 }
 
-/* 15. Для .features-header задайте нижній марджин,*/ 
+/* 15. Для .features-header задайте нижній марджин,*/
 
 .features-header {
   /* заголовок в особенностях */
@@ -256,7 +256,6 @@ h2 {
 .clients {
   padding: 94px 0;
 }
-
 
 /* 23. Для .our-team-list приберіть паддинг */
 
@@ -319,7 +318,7 @@ h2 {
 /* 30. Для кожного li задайте нижній марджин 
 і обнуліть у останнього елементу */
 
-.address-string:nth-child(-n+2) {
+.address-string:nth-child(-n + 2) {
   margin-bottom: 9px;
   width: 231px;
 }
@@ -340,8 +339,8 @@ h2 {
   padding: 6px 22px;
   cursor: pointer;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-filtr.primary {
@@ -353,9 +352,8 @@ h2 {
 .btn-filtr:focus {
   color: var(--light-main-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
-              0px 1px 2px rgba(0, 0, 0, 0.08),
-              0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* 8. При .btn-filtr:focus мають бути такі ж стилі, як і при ховері */
@@ -381,9 +379,8 @@ h2 {
   background: var(--main-bg);
   /* border: 1px solid var(--light-gray); */
   max-width: 370px;
-   /*отступ между меэлементами списка*/  
-   /* cursor: pointer; */
-      
+  /*отступ между меэлементами списка*/
+  /* cursor: pointer; */
 }
 
 .our-joblist-card {
@@ -392,26 +389,25 @@ h2 {
 }
 
 .our-joblist-descr {
-position: absolute;
-top: 0;
-left: 0;
-transform: translateY(100%);
-width: 100%;
-height: 294px;
-padding: 63px 24px;
-color: var(--light-main-color);
-background-color: var(--accent-color);
-opacity: 0.9;
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-font-size: 18px;
-line-height: 1.56;
-letter-spacing: 0.03em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  width: 100%;
+  height: 294px;
+  padding: 63px 24px;
+  color: var(--light-main-color);
+  background-color: var(--accent-color);
+  opacity: 0.9;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
 }
 
 .our-joblist-links:hover .our-joblist-descr {
   transform: translateY(0);
 }
-
 
 /* 37. Для .our-joblist-style h3 задайте нижній марджин */
 
@@ -440,9 +436,9 @@ letter-spacing: 0.03em;
 }
 
 .our-joblist-links:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-  
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 /* 1. Для .header потрібно прибрати ширину і марджин. Задайте лише нижній бордер */
 
@@ -450,7 +446,7 @@ letter-spacing: 0.03em;
 .header {
   /* width: 1200px; */
   /* margin: auto; */
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 /* 2. Для container потрібно додати стилі max-width: 1200px; margin: 0 auto; padding: 0 15px;  */
@@ -458,8 +454,8 @@ letter-spacing: 0.03em;
 .container {
   /*border: 1px solid green;*/
   /* border-bottom: 1px solid #ECECEC; */
-  max-width: 1200px; 
-  margin: 0 auto; 
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 15px;
 }
 
@@ -511,7 +507,7 @@ letter-spacing: 0.03em;
 /* 9. Для hero-base задайте верхній і нижній паддинги по 200рх */
 
 .hero-base {
-padding: 200px 0;
+  padding: 200px 0;
 }
 
 /*.hero-base-container {
@@ -564,7 +560,7 @@ padding: 200px 0;
 
 /* 16. Для .whatwedo-container залиште лише паддинг, а інші стилі приберіть */
 
-.whatwedo { 
+.whatwedo {
   /*border: 0px solid black;
   width: 1170px;
   margin: auto;
@@ -575,10 +571,10 @@ padding: 200px 0;
 /* 18. Всередині кожної секції повинен бути дів контейнер, щоб обмежити ширину контенту */
 
 /* .whatwedo-container { */
-  /* border: 0px solid black; */
-  /* width: 1170px; */
-  /* margin: auto; */
-  /* text-align: center; */
+/* border: 0px solid black; */
+/* width: 1170px; */
+/* margin: auto; */
+/* text-align: center; */
 /* } */
 
 /* 17. Для заголовку задайте клас, усі стилі задайте по селектору
@@ -588,7 +584,7 @@ padding: 200px 0;
   /* border: 0px solid black; */
   /* width: 1170px; */
   margin: auto;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
   text-align: center;
 }
 
@@ -601,14 +597,14 @@ padding: 200px 0;
 }
 
 .whatwedo-item {
-position: relative;
+  position: relative;
 }
 
 .whatwedo-descr {
   position: absolute;
   bottom: 0;
   left: 0;
-  background-color: #2F303A;
+  background-color: #2f303a;
   width: 100%;
   height: 70px;
   color: var(--light-main-color);
@@ -626,14 +622,13 @@ position: relative;
 /* 20. Для усіх фото задайте
  display:block; max-width:100%; height:auto; */
 
-/* img задан по тегу img */ 
+/* img задан по тегу img */
 
 /*.whatwedo-img{
   display: block;
   max-width:100%; 
   height:auto;
 }*/
-
 
 /* 27. Для .footer-base приберіть ширину,
  марджини і бокові паддинги. 
@@ -643,7 +638,7 @@ position: relative;
   /* width: 1200px; */
   /* margin: auto; */
   /* padding: 60px 30px; */
-padding: 60px 0;
+  padding: 60px 0;
 }
 
 /* портфолио */
@@ -654,11 +649,10 @@ padding: 60px 0;
 для секції задайте верхній і нижній паддинги */
 
 .portfolio-container {
-  border: 0px solid black; 
+  border: 0px solid black;
   margin-top: 94px;
   margin-bottom: 94px;
 }
-
 
 .filters_container {
   width: 575px;
@@ -676,9 +670,9 @@ padding: 60px 0;
 }
 
 .our-joblist-container {
- max-width: 1170px;
- border: 0px solid black;
- margin: auto;
+  max-width: 1170px;
+  border: 0px solid black;
+  margin: auto;
 }
 
 .our-jobs {
@@ -703,7 +697,6 @@ padding: 60px 0;
   border-left: 1px solid var(--light-gray);
   border-right: 1px solid var(--light-gray);
   border-bottom: 1px solid var(--light-gray);
-
 }
 
 /* соц линки */
@@ -715,10 +708,9 @@ padding: 60px 0;
   margin-left: 70px;
 }
 
-
 /* 6. .socnet-header зробіть р, це не заголовок */
 
-.socnet-par{
+.socnet-par {
   /* font-style: normal; */
   font-weight: 700;
   font-size: 14px;
@@ -727,12 +719,11 @@ padding: 60px 0;
   text-transform: uppercase;
   color: var(--light-main-color);
   margin-bottom: 20px;
-
 }
 
 /* Для .socnet-list марджин замініть на паддинг */
 
-.socnet-list { 
+.socnet-list {
   justify-content: center;
   display: flex;
   gap: 10px;
@@ -765,9 +756,9 @@ padding: 60px 0;
 
 .socnet-link:hover {
   background-color: var(--accent-color);
-} 
+}
 
-.socnet-link:hover .socnet-icons-team{
+.socnet-link:hover .socnet-icons-team {
   fill: var(--light-main-color);
 }
 
@@ -775,12 +766,13 @@ padding: 60px 0;
   fill: var(--light-main-color);
 }
 
-.socnet-icons-team, .contact-icons, .clients-icons  {
+.socnet-icons-team,
+.contact-icons,
+.clients-icons {
   /* заливаем иконки цветом */
   fill: var(--icons);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 
 /* телефон и конверт  */
 .contact-icons {
@@ -790,7 +782,7 @@ padding: 60px 0;
 /* ховер телефона и конверта вместе со ссылками */
 
 .links:hover .contact-icons {
-fill: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* 1. Для .features-icons приберіть паддинги, задайте розміри і позиціонуйте іконку флексами */
@@ -806,7 +798,7 @@ fill: var(--accent-color);
   border-radius: 4px;
 }
 
-.our-clients { 
+.our-clients {
   justify-content: center;
   display: flex;
   gap: 30px;
@@ -850,40 +842,162 @@ fill: var(--accent-color);
   height: 100%;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-              visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-  .is-hidden {
+.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
 
-  .modal {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 528px;
-    height: 581px;
-    background-color: var(--light-main-color);
-    /* position: absolute; */
-    /* z-index: 1; */
-  }
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: var(--light-main-color);
+  padding: 40px;
+  font-size: 12px;
+  line-height: 1.16;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  color: var(--description-color);
+}
 
-  .modal-close-btn {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    right: 8px;
-    top: 8px;
-    cursor: pointer;
-    border: 1px solid rgba(0,0,0,0.1);
-    border-radius: 50%;
-    background: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.modal_header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 12px;
+}
 
+.modal-close-btn {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-subscr {
+  padding: 15px;
+  width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: var(--light-main-color);
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.form-layer {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 11px 12px 11px 32px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  /* fill: var(--accent-color); */
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-icon {
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+  fill: var(--text-main-color);
+}
+
+.form-comment {
+  width: 100%;
+  height: 138px;
+  resize: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.form-comment:focus {
+  border-color: var(--accent-color);
+}
+
+/* чекбокс */
+
+.chbx-layer {
+  position: relative;
+}
+
+.chbx-form {
+  appearance: none;
+}
+
+.chbx-label {
+  position: relative;
+  padding-left: 27px;
+  height: 15px;
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.chbx-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 15px;
+  /* border: 1px solid black; */
+  background: var(--accent-color);
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.chbx-icon {
+  left: 0px;
+  top: 0px;
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  position: absolute;
+  fill: var(--light-main-color);
+}
+
+.chbx-form:checked + .chbx-icon {
+  fill: none;
+}
