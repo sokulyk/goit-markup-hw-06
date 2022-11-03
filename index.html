@@ -394,7 +394,20 @@
                         </a></li>
                 </ul>
             </div>
+
             <div class="socnet-container">
+            <p class="socnet-par">Підпишіться на розсилку</p>
+            <form class="subscr-form" name="contacts-form" action="#">
+            <input class="input-subscr" type="email" placeholder="E-mail" />
+            <button data-modal-open type="button" class="btn-hero">Підписатися
+                <svg class="socnet-icons" width="24" height="24">
+                    <use href="./images/icons.svg#icon-subscrb"></use>
+                </svg>
+            </button>
+            </form>
+            </div>    
+
+            <!-- <div class="socnet-container"> 
                 <p class="socnet-par">Підпишіться на розсилку</p>
                 <ul class="list socnet-list-footer">
                     <li class="socnet-item">
@@ -408,14 +421,15 @@
                         </button>
                     </li>
                 </ul>
-            </div>
+            </div>-->
 
         </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <h2 class="modal_header">Залиште свої дані, ми вам передзвонимо</h2>
+            <!-- h2 corrected to p -->
+            <p class="modal_header">Залиште свої дані, ми вам передзвонимо</p>
             <form name="contacts-form" action="#">
 
                 <label class="form-label" for="your-name">Ім'я</label>
@@ -450,13 +464,16 @@
                 </textarea>
 
                 <div class="chbx-layer">
-                    <input class="chbx-form visually-hidden" id="terms" type="checkbox" name="terms">
-                    <svg class="chbx-icon" width="15" height="14">
-                        <use href="./images/icons.svg#close-icon"></use>
-                    </svg>
+                <label class="chbx-label" for="terms">Погоджуюся з розсилкою та приймаю &nbsp;<a class="modal-links" href="#">Умови
+                        договору</a>
+                        
+                            <input class="chbx-form visually-hidden" id="terms" type="checkbox" name="terms">
+                            <svg class="chbx-icon" width="16" height="15">
+                                <use href="./images/icons.svg#icon-chbx"></use>
+                            </svg>
+                        
+                </label>
                 </div>
-                <label class="chbx-label" for="terms">Погоджуюся з розсилкою та приймаю &nbsp;<a href="#">Умови
-                        договору</a></label>
                 <button type="button" class="btn-hero">Відправити</button>
 
             </form>

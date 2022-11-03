@@ -160,7 +160,7 @@ img {
   /* оформляем кнопку Замовити */
   /* width: 216px; */
   /* height: 50px; */
-  padding: 10px 32px;
+  padding: 10px 52px;
   background: var(--accent-color);
   border: none;
   border-radius: 4px;
@@ -861,11 +861,6 @@ h2 {
   height: 581px;
   background-color: var(--light-main-color);
   padding: 40px;
-  font-size: 12px;
-  line-height: 1.16;
-  /* identical to box height */
-  letter-spacing: 0.01em;
-  color: var(--description-color);
 }
 
 .modal_header {
@@ -892,6 +887,15 @@ h2 {
   justify-content: center;
 }
 
+.modal-links {
+  color: var(--accent-color);
+}
+
+.subscr-form {
+  display: flex;
+  gap: 12px;
+}
+
 .input-subscr {
   padding: 15px;
   width: 358px;
@@ -908,6 +912,11 @@ h2 {
 .form-label {
   display: block;
   margin-bottom: 4px;
+  /* перенёс стили текста из .modal */
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--description-color);
 }
 
 .form-layer {
@@ -917,19 +926,16 @@ h2 {
 
 .form-input {
   width: 100%;
-  padding: 11px 12px 11px 32px;
+  padding: 12px 12px 12px 32px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* fill: var(--accent-color); */
 }
 
 .form-input:focus {
   border-color: var(--accent-color);
-}
-
-.form-input:focus + .form-icon {
-  fill: var(--accent-color);
 }
 
 .form-icon {
@@ -938,17 +944,26 @@ h2 {
   transform: translateY(-50%);
   position: absolute;
   fill: var(--text-main-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input:focus + .form-icon {
+  fill: var(--accent-color);
+}
+
+
+
 .form-comment {
+  display: block;
   width: 100%;
-  height: 138px;
+  height: 120px;
   resize: none;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: none;
   padding: 12px 16px;
   margin-bottom: 20px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-comment:focus {
@@ -959,6 +974,9 @@ h2 {
 
 .chbx-layer {
   position: relative;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid black; */
 }
 
 .chbx-form {
@@ -973,6 +991,10 @@ h2 {
   display: flex;
   align-items: center;
   cursor: pointer;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: var(--description-color);
   margin-bottom: 30px;
 }
 
@@ -983,21 +1005,25 @@ h2 {
   left: 0;
   width: 16px;
   height: 15px;
-  /* border: 1px solid black; */
-  background: var(--accent-color);
+  border: 1px solid var(--description-color);
+  /* background: var(--accent-color); */
   border-radius: 2px;
   z-index: -1;
 }
 
 .chbx-icon {
+  padding: 2px;
   left: 0px;
   top: 0px;
   /* top: 50%; */
   /* transform: translateY(-50%); */
   position: absolute;
   fill: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);              
 }
 
 .chbx-form:checked + .chbx-icon {
   fill: var(--light-main-color);
+  background-color: var(--accent-color);
+  border-radius: 2px;
 }
