@@ -995,9 +995,9 @@ h2 {
   /* top: 50%; */
   /* transform: translateY(-50%); */
   position: absolute;
-  fill: var(--light-main-color);
+  fill: none;
 }
 
 .chbx-form:checked + .chbx-icon {
-  fill: none;
+  fill: var(--light-main-color);
 }
